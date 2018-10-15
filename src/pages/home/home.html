@@ -1,0 +1,17 @@
+
+<ion-content padding>
+  <ion-title>
+    Login
+  </ion-title>
+  <ion-list>
+    <ion-item>
+  <ion-input type="email" placeholder="email" [(ngModel)]="model.email" id="email"></ion-input>
+    </ion-item> 
+    <ion-item>
+      <ion-input type="password"  placeholder="password" id="password" [(ngModel)]="model.password"></ion-input>
+        </ion-item>
+  </ion-list>
+  <button ion-button full (click)="signin()">Sign in</button>
+  <button ion-button full color="light" (click)="goregister()">Register</button>
+  </ion-content>
+  
